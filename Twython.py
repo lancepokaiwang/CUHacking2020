@@ -22,22 +22,41 @@ with open("twitter_credentials.json", "r") as file:
 # Instantiate an object
 python_tweets = Twython(creds['CONSUMER_KEY'], creds['CONSUMER_SECRET'])
 
-# Create our query
-query = {'q': '@RBC',
-         'count': 100,
-         }
+last_id = '1216084524825624577'
+row_data = {}
+record = True
+resume = True
+date = 4
 
-import pandas as pd
+while resume:
+    record = True
+    # Create our query
+    query = {'q': '@RBC',
+             'count': 1000,
+             'max_id': last_id
+             }
 
-result = python_tweets.search(**query)
-result = result["statuses"]
+    result = python_tweets.search(**query)
+    result = result["statuses"]
 
-print(len(result))
+    print("Count {}".format(len(result)))
 
-print(result)
+    if len(result) > 0:
+        for data in result:
+            last_id = str(data["id"]-1)
+            if data["id"] not in row_data:
+                print(data)
+                row_data[data["id"]] = data
+
+    else:
+        resume = False
+    date += 1
+    print(last_id)
+
+print(row_data)
 
 with open('data.json', 'w') as outfile:
-    json.dump(result, outfile)
+    json.dump(row_data, outfile)
 
 # # Search tweets
 # dict_ = {'user': [], 'date': [], 'text': [], 'favorite_count': []}
