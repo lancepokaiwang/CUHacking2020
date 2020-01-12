@@ -55,7 +55,7 @@ while resume:
 
 print(row_data)
 
-with open('data.json', 'w') as outfile:
+with open('data/data.json', 'w') as outfile:
     json.dump(row_data, outfile)
 
 # # Search tweets
