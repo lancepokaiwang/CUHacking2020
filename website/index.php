@@ -62,75 +62,82 @@
                     <li class="active">
                         <a href="index.php"> <i class="menu-icon fa fa-dashboard"></i>Dashboard </a>
                     </li>
-                    <h3 class="menu-title">UI elements</h3><!-- /.menu-title -->
-                    <li class="menu-item-has-children dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-laptop"></i>Components</a>
-                        <ul class="sub-menu children dropdown-menu">
-                            <li><i class="fa fa-puzzle-piece"></i><a href="ui-buttons.html">Buttons</a></li>
-                            <li><i class="fa fa-id-badge"></i><a href="ui-badges.html">Badges</a></li>
-                            <li><i class="fa fa-bars"></i><a href="ui-tabs.html">Tabs</a></li>
-                            <li><i class="fa fa-share-square-o"></i><a href="ui-social-buttons.html">Social Buttons</a></li>
-                            <li><i class="fa fa-id-card-o"></i><a href="ui-cards.html">Cards</a></li>
-                            <li><i class="fa fa-exclamation-triangle"></i><a href="ui-alerts.html">Alerts</a></li>
-                            <li><i class="fa fa-spinner"></i><a href="ui-progressbar.html">Progress Bars</a></li>
-                            <li><i class="fa fa-fire"></i><a href="ui-modals.html">Modals</a></li>
-                            <li><i class="fa fa-book"></i><a href="ui-switches.html">Switches</a></li>
-                            <li><i class="fa fa-th"></i><a href="ui-grids.html">Grids</a></li>
-                            <li><i class="fa fa-file-word-o"></i><a href="ui-typgraphy.html">Typography</a></li>
-                        </ul>
+                    <li class="active">
+                        <a href="tables-data.html"> <i class="menu-icon fa fa-table"></i>Trending key words</a>
                     </li>
-                    <li class="menu-item-has-children dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-table"></i>Tables</a>
-                        <ul class="sub-menu children dropdown-menu">
-                            <li><i class="fa fa-table"></i><a href="tables-basic.html">Basic Table</a></li>
-                            <li><i class="fa fa-table"></i><a href="tables-data.html">Data Table</a></li>
-                        </ul>
-                    </li>
-                    <li class="menu-item-has-children dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-th"></i>Forms</a>
-                        <ul class="sub-menu children dropdown-menu">
-                            <li><i class="menu-icon fa fa-th"></i><a href="forms-basic.html">Basic Form</a></li>
-                            <li><i class="menu-icon fa fa-th"></i><a href="forms-advanced.html">Advanced Form</a></li>
-                        </ul>
+                    <li class="active">
+                        <a href="tables-data.html"> <i class="menu-icon fa fa-table"></i>Key words insight</a>
                     </li>
 
-                    <h3 class="menu-title">Icons</h3><!-- /.menu-title -->
+<!--                    <h3 class="menu-title">Display</h3>-->
+<!--                    <li class="menu-item-has-children dropdown">-->
+<!--                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-laptop"></i>Components</a>-->
+<!--                        <ul class="sub-menu children dropdown-menu">-->
+<!--                            <li><i class="fa fa-puzzle-piece"></i><a href="ui-buttons.html">Buttons</a></li>-->
+<!--                            <li><i class="fa fa-id-badge"></i><a href="ui-badges.html">Badges</a></li>-->
+<!--                            <li><i class="fa fa-bars"></i><a href="ui-tabs.html">Tabs</a></li>-->
+<!--                            <li><i class="fa fa-share-square-o"></i><a href="ui-social-buttons.html">Social Buttons</a></li>-->
+<!--                            <li><i class="fa fa-id-card-o"></i><a href="ui-cards.html">Cards</a></li>-->
+<!--                            <li><i class="fa fa-exclamation-triangle"></i><a href="ui-alerts.html">Alerts</a></li>-->
+<!--                            <li><i class="fa fa-spinner"></i><a href="ui-progressbar.html">Progress Bars</a></li>-->
+<!--                            <li><i class="fa fa-fire"></i><a href="ui-modals.html">Modals</a></li>-->
+<!--                            <li><i class="fa fa-book"></i><a href="ui-switches.html">Switches</a></li>-->
+<!--                            <li><i class="fa fa-th"></i><a href="ui-grids.html">Grids</a></li>-->
+<!--                            <li><i class="fa fa-file-word-o"></i><a href="ui-typgraphy.html">Typography</a></li>-->
+<!--                        </ul>-->
+<!--                    </li>-->
+<!--                    <li class="menu-item-has-children dropdown">-->
+<!--                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-table"></i>Tables</a>-->
+<!--                        <ul class="sub-menu children dropdown-menu">-->
+<!--                            <li><i class="fa fa-table"></i><a href="tables-data.html">Trending key words</a></li>-->
+<!--                            <li><i class="fa fa-table"></i><a href="tables-data.html">Key words insight</a></li>-->
+<!--                        </ul>-->
+<!--                    </li>-->
+<!--                    <li class="menu-item-has-children dropdown">-->
+<!--                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-th"></i>Forms</a>-->
+<!--                        <ul class="sub-menu children dropdown-menu">-->
+<!--                            <li><i class="menu-icon fa fa-th"></i><a href="forms-basic.html">Basic Form</a></li>-->
+<!--                            <li><i class="menu-icon fa fa-th"></i><a href="forms-advanced.html">Advanced Form</a></li>-->
+<!--                        </ul>-->
+<!--                    </li>-->
 
-                    <li class="menu-item-has-children dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-tasks"></i>Icons</a>
-                        <ul class="sub-menu children dropdown-menu">
-                            <li><i class="menu-icon fa fa-fort-awesome"></i><a href="font-fontawesome.html">Font Awesome</a></li>
-                            <li><i class="menu-icon ti-themify-logo"></i><a href="font-themify.html">Themefy Icons</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="widgets.html"> <i class="menu-icon ti-email"></i>Widgets </a>
-                    </li>
-                    <li class="menu-item-has-children dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-bar-chart"></i>Charts</a>
-                        <ul class="sub-menu children dropdown-menu">
-                            <li><i class="menu-icon fa fa-line-chart"></i><a href="charts-chartjs.html">Chart JS</a></li>
-                            <li><i class="menu-icon fa fa-area-chart"></i><a href="charts-flot.html">Flot Chart</a></li>
-                            <li><i class="menu-icon fa fa-pie-chart"></i><a href="charts-peity.html">Peity Chart</a></li>
-                        </ul>
-                    </li>
-
-                    <li class="menu-item-has-children dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-area-chart"></i>Maps</a>
-                        <ul class="sub-menu children dropdown-menu">
-                            <li><i class="menu-icon fa fa-map-o"></i><a href="maps-gmap.html">Google Maps</a></li>
-                            <li><i class="menu-icon fa fa-street-view"></i><a href="maps-vector.html">Vector Maps</a></li>
-                        </ul>
-                    </li>
-                    <h3 class="menu-title">Extras</h3><!-- /.menu-title -->
-                    <li class="menu-item-has-children dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-glass"></i>Pages</a>
-                        <ul class="sub-menu children dropdown-menu">
-                            <li><i class="menu-icon fa fa-sign-in"></i><a href="page-login.html">Login</a></li>
-                            <li><i class="menu-icon fa fa-sign-in"></i><a href="page-register.html">Register</a></li>
-                            <li><i class="menu-icon fa fa-paper-plane"></i><a href="pages-forget.html">Forget Pass</a></li>
-                        </ul>
-                    </li>
+<!--                    <h3 class="menu-title">Icons</h3><!-- /.menu-title -->-->
+<!---->
+<!--                    <li class="menu-item-has-children dropdown">-->
+<!--                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-tasks"></i>Icons</a>-->
+<!--                        <ul class="sub-menu children dropdown-menu">-->
+<!--                            <li><i class="menu-icon fa fa-fort-awesome"></i><a href="font-fontawesome.html">Font Awesome</a></li>-->
+<!--                            <li><i class="menu-icon ti-themify-logo"></i><a href="font-themify.html">Themefy Icons</a></li>-->
+<!--                        </ul>-->
+<!--                    </li>-->
+<!--                    <li>-->
+<!--                        <a href="widgets.html"> <i class="menu-icon ti-email"></i>Widgets </a>-->
+<!--                    </li>-->
+<!--                    <li class="menu-item-has-children dropdown">-->
+<!--                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-bar-chart"></i>Charts</a>-->
+<!--                        <ul class="sub-menu children dropdown-menu">-->
+<!--                            <li><i class="menu-icon fa fa-line-chart"></i><a href="charts-chartjs.html">Chart JS</a></li>-->
+<!--                            <li><i class="menu-icon fa fa-area-chart"></i><a href="charts-flot.html">Flot Chart</a></li>-->
+<!--                            <li><i class="menu-icon fa fa-pie-chart"></i><a href="charts-peity.html">Peity Chart</a></li>-->
+<!--                        </ul>-->
+<!--                    </li>-->
+<!---->
+<!--                    <li class="menu-item-has-children dropdown">-->
+<!--                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-area-chart"></i>Maps</a>-->
+<!--                        <ul class="sub-menu children dropdown-menu">-->
+<!--                            <li><i class="menu-icon fa fa-map-o"></i><a href="maps-gmap.html">Google Maps</a></li>-->
+<!--                            <li><i class="menu-icon fa fa-street-view"></i><a href="maps-vector.html">Vector Maps</a></li>-->
+<!--                        </ul>-->
+<!--                    </li>-->
+<!--                    <h3 class="menu-title">Extras</h3><!-- /.menu-title -->-->
+<!--                    <li class="menu-item-has-children dropdown">-->
+<!--                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-glass"></i>Pages</a>-->
+<!--                        <ul class="sub-menu children dropdown-menu">-->
+<!--                            <li><i class="menu-icon fa fa-sign-in"></i><a href="page-login.html">Login</a></li>-->
+<!--                            <li><i class="menu-icon fa fa-sign-in"></i><a href="page-register.html">Register</a></li>-->
+<!--                            <li><i class="menu-icon fa fa-paper-plane"></i><a href="pages-forget.html">Forget Pass</a></li>-->
+<!--                        </ul>-->
+<!--                    </li>-->
                 </ul>
             </div><!-- /.navbar-collapse -->
         </nav>
@@ -359,62 +366,61 @@
             </div>
             <!--/.col-->
 
-            <div class="col-sm-6 col-lg-3">
-                <div class="card text-white bg-flat-color-3">
-                    <div class="card-body pb-0">
-                        <div class="dropdown float-right">
-                            <button class="btn bg-transparent dropdown-toggle theme-toggle text-light" type="button" id="dropdownMenuButton3" data-toggle="dropdown">
-                                <i class="fa fa-cog"></i>
-                            </button>
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton3">
-                                <div class="dropdown-menu-content">
-                                    <a class="dropdown-item" href="#">Action</a>
-                                    <a class="dropdown-item" href="#">Another action</a>
-                                    <a class="dropdown-item" href="#">Something else here</a>
-                                </div>
-                            </div>
-                        </div>
-                        <h4 class="mb-0">
-                            <span class="count">10468</span>
-                        </h4>
-                        <p class="text-light">Members online</p>
-
-                    </div>
-
-                    <div class="chart-wrapper px-0" style="height:70px;" height="70">
-                        <canvas id="widgetChart3"></canvas>
-                    </div>
-                </div>
-            </div>
-            <!--/.col-->
-
-            <div class="col-sm-6 col-lg-3">
-                <div class="card text-white bg-flat-color-4">
-                    <div class="card-body pb-0">
-                        <div class="dropdown float-right">
-                            <button class="btn bg-transparent dropdown-toggle theme-toggle text-light" type="button" id="dropdownMenuButton4" data-toggle="dropdown">
-                                <i class="fa fa-cog"></i>
-                            </button>
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton4">
-                                <div class="dropdown-menu-content">
-                                    <a class="dropdown-item" href="#">Action</a>
-                                    <a class="dropdown-item" href="#">Another action</a>
-                                    <a class="dropdown-item" href="#">Something else here</a>
-                                </div>
-                            </div>
-                        </div>
-                        <h4 class="mb-0">
-                            <span class="count">10468</span>
-                        </h4>
-                        <p class="text-light">Members online</p>
-
-                        <div class="chart-wrapper px-3" style="height:70px;" height="70">
-                            <canvas id="widgetChart4"></canvas>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
+<!--            <div class="col-sm-6 col-lg-3">-->
+<!--                <div class="card text-white bg-flat-color-3">-->
+<!--                    <div class="card-body pb-0">-->
+<!--                        <div class="dropdown float-right">-->
+<!--                            <button class="btn bg-transparent dropdown-toggle theme-toggle text-light" type="button" id="dropdownMenuButton3" data-toggle="dropdown">-->
+<!--                                <i class="fa fa-cog"></i>-->
+<!--                            </button>-->
+<!--                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton3">-->
+<!--                                <div class="dropdown-menu-content">-->
+<!--                                    <a class="dropdown-item" href="#">Action</a>-->
+<!--                                    <a class="dropdown-item" href="#">Another action</a>-->
+<!--                                    <a class="dropdown-item" href="#">Something else here</a>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <h4 class="mb-0">-->
+<!--                            <span class="count">10468</span>-->
+<!--                        </h4>-->
+<!--                        <p class="text-light">Members online</p>-->
+<!---->
+<!--                    </div>-->
+<!---->
+<!--                    <div class="chart-wrapper px-0" style="height:70px;" height="70">-->
+<!--                        <canvas id="widgetChart3"></canvas>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!---->
+<!--            <div class="col-sm-6 col-lg-3">-->
+<!--                <div class="card text-white bg-flat-color-4">-->
+<!--                    <div class="card-body pb-0">-->
+<!--                        <div class="dropdown float-right">-->
+<!--                            <button class="btn bg-transparent dropdown-toggle theme-toggle text-light" type="button" id="dropdownMenuButton4" data-toggle="dropdown">-->
+<!--                                <i class="fa fa-cog"></i>-->
+<!--                            </button>-->
+<!--                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton4">-->
+<!--                                <div class="dropdown-menu-content">-->
+<!--                                    <a class="dropdown-item" href="#">Action</a>-->
+<!--                                    <a class="dropdown-item" href="#">Another action</a>-->
+<!--                                    <a class="dropdown-item" href="#">Something else here</a>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <h4 class="mb-0">-->
+<!--                            <span class="count">10468</span>-->
+<!--                        </h4>-->
+<!--                        <p class="text-light">Members online</p>-->
+<!---->
+<!--                        <div class="chart-wrapper px-3" style="height:70px;" height="70">-->
+<!--                            <canvas id="widgetChart4"></canvas>-->
+<!--                        </div>-->
+<!---->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
             <!--/.col-->
 
             <div class="col-lg-3 col-md-6">
@@ -455,41 +461,38 @@
             <!--/.col-->
 
 
-            <div class="col-lg-3 col-md-6">
-                <div class="social-box linkedin">
-                    <i class="fa fa-linkedin"></i>
-                    <ul>
-                        <li>
-                            <span class="count">40</span> +
-                            <span>contacts</span>
-                        </li>
-                        <li>
-                            <span class="count">250</span>
-                            <span>feeds</span>
-                        </li>
-                    </ul>
-                </div>
-                <!--/social-box-->
-            </div>
-            <!--/.col-->
-
-
-            <div class="col-lg-3 col-md-6">
-                <div class="social-box google-plus">
-                    <i class="fa fa-google-plus"></i>
-                    <ul>
-                        <li>
-                            <span class="count">94</span> k
-                            <span>followers</span>
-                        </li>
-                        <li>
-                            <span class="count">92</span>
-                            <span>circles</span>
-                        </li>
-                    </ul>
-                </div>
-                <!--/social-box-->
-            </div>
+<!--            <div class="col-lg-3 col-md-6">-->
+<!--                <div class="social-box linkedin">-->
+<!--                    <i class="fa fa-linkedin"></i>-->
+<!--                    <ul>-->
+<!--                        <li>-->
+<!--                            <span class="count">40</span> +-->
+<!--                            <span>contacts</span>-->
+<!--                        </li>-->
+<!--                        <li>-->
+<!--                            <span class="count">250</span>-->
+<!--                            <span>feeds</span>-->
+<!--                        </li>-->
+<!--                    </ul>-->
+<!--                </div>-->
+<!--            </div>-->
+<!---->
+<!---->
+<!--            <div class="col-lg-3 col-md-6">-->
+<!--                <div class="social-box google-plus">-->
+<!--                    <i class="fa fa-google-plus"></i>-->
+<!--                    <ul>-->
+<!--                        <li>-->
+<!--                            <span class="count">94</span> k-->
+<!--                            <span>followers</span>-->
+<!--                        </li>-->
+<!--                        <li>-->
+<!--                            <span class="count">92</span>-->
+<!--                            <span>circles</span>-->
+<!--                        </li>-->
+<!--                    </ul>-->
+<!--                </div>-->
+<!--            </div>-->
             <!--/.col-->
 
             <div class="col-xl-6">
@@ -569,109 +572,93 @@
                 </div>
             </div>
 
-            <div class="col-xl-3 col-lg-6">
-                <section class="card">
-                    <div class="twt-feed blue-bg">
-                        <div class="corner-ribon black-ribon">
-                            <i class="fa fa-twitter"></i>
-                        </div>
-                        <div class="fa fa-twitter wtt-mark"></div>
+<!--            <div class="col-xl-3 col-lg-6">-->
+<!--                <section class="card">-->
 
-                        <div class="media">
-                            <a href="#">
-                                <img class="align-self-center rounded-circle mr-3" style="width:85px; height:85px;" alt="" src="images/admin.jpg">
-                            </a>
-                            <div class="media-body">
-                                <h2 class="text-white display-6">Jim Doe</h2>
-                                <p class="text-light">Project Manager</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="weather-category twt-category">
-                        <ul>
-                            <li class="active">
-                                <h5>750</h5>
-                                Tweets
-                            </li>
-                            <li>
-                                <h5>865</h5>
-                                Following
-                            </li>
-                            <li>
-                                <h5>3645</h5>
-                                Followers
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="twt-write col-sm-12">
-                        <textarea placeholder="Write your Tweet and Enter" rows="1" class="form-control t-text-area"></textarea>
-                    </div>
-                    <footer class="twt-footer">
-                        <a href="#"><i class="fa fa-camera"></i></a>
-                        <a href="#"><i class="fa fa-map-marker"></i></a>
-                        New Castle, UK
-                        <span class="pull-right">
-                            32
-                        </span>
-                    </footer>
-                </section>
-            </div>
+<!--                    <div class="weather-category twt-category">-->
+<!--                        <ul>-->
+<!--                            <li class="active">-->
+<!--                                <h5>750</h5>-->
+<!--                                Tweets-->
+<!--                            </li>-->
+<!--                            <li>-->
+<!--                                <h5>865</h5>-->
+<!--                                Following-->
+<!--                            </li>-->
+<!--                            <li>-->
+<!--                                <h5>3645</h5>-->
+<!--                                Followers-->
+<!--                            </li>-->
+<!--                        </ul>-->
+<!--                    </div>-->
+<!--                    <div class="twt-write col-sm-12">-->
+<!--                        <textarea placeholder="Write your Tweet and Enter" rows="1" class="form-control t-text-area"></textarea>-->
+<!--                    </div>-->
+<!--                    <footer class="twt-footer">-->
+<!--                        <a href="#"><i class="fa fa-camera"></i></a>-->
+<!--                        <a href="#"><i class="fa fa-map-marker"></i></a>-->
+<!--                        New Castle, UK-->
+<!--                        <span class="pull-right">-->
+<!--                            32-->
+<!--                        </span>-->
+<!--                    </footer>-->
+<!--                </section>-->
+<!--            </div>-->
 
 
-            <div class="col-xl-3 col-lg-6">
-                <div class="card">
-                    <div class="card-body">
-                        <div class="stat-widget-one">
-                            <div class="stat-icon dib"><i class="ti-money text-success border-success"></i></div>
-                            <div class="stat-content dib">
-                                <div class="stat-text">Total Profit</div>
-                                <div class="stat-digit">1,012</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="col-xl-3 col-lg-6">
-                <div class="card">
-                    <div class="card-body">
-                        <div class="stat-widget-one">
-                            <div class="stat-icon dib"><i class="ti-user text-primary border-primary"></i></div>
-                            <div class="stat-content dib">
-                                <div class="stat-text">New Customer</div>
-                                <div class="stat-digit">961</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-xl-3 col-lg-6">
-                <div class="card">
-                    <div class="card-body">
-                        <div class="stat-widget-one">
-                            <div class="stat-icon dib"><i class="ti-layout-grid2 text-warning border-warning"></i></div>
-                            <div class="stat-content dib">
-                                <div class="stat-text">Active Projects</div>
-                                <div class="stat-digit">770</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-xl-6">
-                <div class="card">
-                    <div class="card-header">
-                        <h4>World</h4>
-                    </div>
-                    <div class="Vector-map-js">
-                        <div id="vmap" class="vmap" style="height: 265px;"></div>
-                    </div>
-                </div>
-                <!-- /# card -->
-            </div>
+<!--            <div class="col-xl-3 col-lg-6">-->
+<!--                <div class="card">-->
+<!--                    <div class="card-body">-->
+<!--                        <div class="stat-widget-one">-->
+<!--                            <div class="stat-icon dib"><i class="ti-money text-success border-success"></i></div>-->
+<!--                            <div class="stat-content dib">-->
+<!--                                <div class="stat-text">Total Profit</div>-->
+<!--                                <div class="stat-digit">1,012</div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!---->
+<!---->
+<!--            <div class="col-xl-3 col-lg-6">-->
+<!--                <div class="card">-->
+<!--                    <div class="card-body">-->
+<!--                        <div class="stat-widget-one">-->
+<!--                            <div class="stat-icon dib"><i class="ti-user text-primary border-primary"></i></div>-->
+<!--                            <div class="stat-content dib">-->
+<!--                                <div class="stat-text">New Customer</div>-->
+<!--                                <div class="stat-digit">961</div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!---->
+<!--            <div class="col-xl-3 col-lg-6">-->
+<!--                <div class="card">-->
+<!--                    <div class="card-body">-->
+<!--                        <div class="stat-widget-one">-->
+<!--                            <div class="stat-icon dib"><i class="ti-layout-grid2 text-warning border-warning"></i></div>-->
+<!--                            <div class="stat-content dib">-->
+<!--                                <div class="stat-text">Active Projects</div>-->
+<!--                                <div class="stat-digit">770</div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!---->
+<!--            <div class="col-xl-6">-->
+<!--                <div class="card">-->
+<!--                    <div class="card-header">-->
+<!--                        <h4>World</h4>-->
+<!--                    </div>-->
+<!--                    <div class="Vector-map-js">-->
+<!--                        <div id="vmap" class="vmap" style="height: 265px;"></div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
 
 
         </div> <!-- .content -->
