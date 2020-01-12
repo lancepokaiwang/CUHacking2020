@@ -1,4 +1,8 @@
 import json
+import pymysql
+
+db = pymysql.connect("localhost", "root", "", "lancewgc_cuhacking2020")
+cursor = db.cursor()
 
 # Enter your keys/secrets as strings in the following fields
 credentials = {}
@@ -53,22 +57,14 @@ while resume:
     date += 1
     print(last_id)
 
-print(row_data)
+# print(row_data)
 
-with open('data/data.json', 'w') as outfile:
-    json.dump(row_data, outfile)
+# with open('data/data.json', 'w') as outfile:
+#     json.dump(row_data, outfile)
 
-# # Search tweets
-# dict_ = {'user': [], 'date': [], 'text': [], 'favorite_count': []}
-# for status in python_tweets.search(**query)['statuses']:
-#     dict_['user'].append(status['user']['screen_name'])
-#     dict_['date'].append(status['created_at'])
-#     dict_['text'].append(status['text'])
-#     dict_['favorite_count'].append(status['favorite_count'])
-#
-# # Structure data in a pandas DataFrame for easier manipulation
-# df = pd.DataFrame(dict_)
-# df.sort_values(by='favorite_count', inplace=True, ascending=False)
-# df.head(5)
-#
-# print(dict_)
+for id, data in row_data.items():
+    sql = 'INSERT INTO tweet(tweet_id, body) VALUES ("{}", "{}")'.format(id, data["text"])
+    print(sql)
+    cursor.execute(sql)
+    db.commit()
+
