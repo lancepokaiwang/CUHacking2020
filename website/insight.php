@@ -87,7 +87,7 @@ foreach($words as $key => $value){
 
                     <div class="col-md-8">
                         <div class="card">
-                            <div class="card-header" style="text-align: ">
+                            <div class="card-header" style="text-align: center;">
                                 <strong class="card-title">Words on Fire</strong>
                             </div>
                             <div class="card-body">
