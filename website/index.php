@@ -1,6 +1,11 @@
 <?php
 require "db.php";
-
+$DAO = new DatabaseAccessObject();
+$stop_words = array();
+$words = $DAO->execute("SELECT * FROM filtering_words");
+foreach($words as $key => $value){
+    array_push($stop_words, $value["word"]);
+}
 ?>
 
 <!doctype html>
@@ -33,9 +38,15 @@ require "db.php";
 
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
 
+    <style>
+        .twitter:hover, .facebook:hover{
+            cursor: pointer;
+        }
+    </style>
+
 </head>
 
-<body>
+<body style="background-color: #fff;">
 
     <?php require "left_panel.html"?>
 
@@ -69,17 +80,17 @@ require "db.php";
             </div>
         </div>
 
-        <div class="content mt-3">
+        <div class="content mt-3 justify-content-md-center">
             <div class="col-lg-6 col-md-6">
                 <div class="social-box twitter">
                     <i class="fa fa-twitter"></i>
                     <ul>
                         <li>
-                            <span>Last 7 Days</span>
+                            <span style="color: #000">Last 7 Days</span>
                         </li>
                         <li>
-                            <span class="count">1621</span>
-                            <span>tweets</span>
+                            <span class="count" style="color: #000">1621</span>
+                            <span style="color: #000">tweets</span>
                         </li>
                     </ul>
                 </div>
@@ -89,97 +100,75 @@ require "db.php";
                     <i class="fa fa-facebook"></i>
                     <ul>
                         <li>
-                            <span>Unavailable</span>
+                            <span style="color: #000">Unavailable</span>
                         </li>
                         <li>
 <!--                            <span class="count"></span>-->
-                            <span>Unavailable</span>
+                            <span style="color: #000">Unavailable</span>
                         </li>
                     </ul>
                 </div>
             </div>
-
-<!--            <div class="col-xl-5">-->
-<!--                <div class="card">-->
-<!--                    <div class="card-body">-->
-<!--                        <div class="row">-->
-<!--                            <div class="col-sm-4">-->
-<!--                                <h4 class="card-title mb-0">Traffic</h4>-->
-<!--                                <div class="small text-muted">October 2017</div>-->
-<!--                            </div>-->
-<!--                            <!--/.col-->-->
-<!--                            <div class="col-sm-8 hidden-sm-down">-->
-<!--                                <button type="button" class="btn btn-primary float-right bg-flat-color-1"><i class="fa fa-cloud-download"></i></button>-->
-<!--                                <div class="btn-toolbar float-right" role="toolbar" aria-label="Toolbar with button groups">-->
-<!--                                    <div class="btn-group mr-3" data-toggle="buttons" aria-label="First group">-->
-<!--                                        <label class="btn btn-outline-secondary">-->
-<!--                                            <input type="radio" name="options" id="option1"> Day-->
-<!--                                        </label>-->
-<!--                                        <label class="btn btn-outline-secondary active">-->
-<!--                                            <input type="radio" name="options" id="option2" checked=""> Month-->
-<!--                                        </label>-->
-<!--                                        <label class="btn btn-outline-secondary">-->
-<!--                                            <input type="radio" name="options" id="option3"> Year-->
-<!--                                        </label>-->
-<!--                                    </div>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                            <!--/.col-->-->
-<!---->
-<!---->
-<!--                        </div>-->
-<!--                        <!--/.row-->-->
-<!--                        <div class="chart-wrapper mt-4">-->
-<!--                            <canvas id="trafficChart" style="height:200px;" height="200"></canvas>-->
-<!--                        </div>-->
-<!---->
-<!--                    </div>-->
-<!--                    <div class="card-footer">-->
-<!--                        <ul>-->
-<!--                            <li>-->
-<!--                                <div class="text-muted">Visits</div>-->
-<!--                                <strong>29.703 Users (40%)</strong>-->
-<!--                                <div class="progress progress-xs mt-2" style="height: 5px;">-->
-<!--                                    <div class="progress-bar bg-success" role="progressbar" style="width: 40%;" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>-->
-<!--                                </div>-->
-<!--                            </li>-->
-<!--                            <li class="hidden-sm-down">-->
-<!--                                <div class="text-muted">Unique</div>-->
-<!--                                <strong>24.093 Users (20%)</strong>-->
-<!--                                <div class="progress progress-xs mt-2" style="height: 5px;">-->
-<!--                                    <div class="progress-bar bg-info" role="progressbar" style="width: 20%;" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>-->
-<!--                                </div>-->
-<!--                            </li>-->
-<!--                            <li>-->
-<!--                                <div class="text-muted">Pageviews</div>-->
-<!--                                <strong>78.706 Views (60%)</strong>-->
-<!--                                <div class="progress progress-xs mt-2" style="height: 5px;">-->
-<!--                                    <div class="progress-bar bg-warning" role="progressbar" style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>-->
-<!--                                </div>-->
-<!--                            </li>-->
-<!--                            <li class="hidden-sm-down">-->
-<!--                                <div class="text-muted">New Users</div>-->
-<!--                                <strong>22.123 Users (80%)</strong>-->
-<!--                                <div class="progress progress-xs mt-2" style="height: 5px;">-->
-<!--                                    <div class="progress-bar bg-danger" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>-->
-<!--                                </div>-->
-<!--                            </li>-->
-<!--                            <li class="hidden-sm-down">-->
-<!--                                <div class="text-muted">Bounce Rate</div>-->
-<!--                                <strong>40.15%</strong>-->
-<!--                                <div class="progress progress-xs mt-2" style="height: 5px;">-->
-<!--                                    <div class="progress-bar" role="progressbar" style="width: 40%;" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>-->
-<!--                                </div>-->
-<!--                            </li>-->
-<!--                        </ul>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
-            <div class="col-xl-12">
-                <img src="images/cloud.png" alt="">
+            <div class="col-lg-8 col-md-6">
+                <div class="card">
+                    <div class="card-header">
+                        <strong class="card-title mb-3">Trend in One Graph</strong>
+                    </div>
+                    <div class="card-body">
+                        <img src="images/cloud.png" alt="">
+                    </div>
+                </div>
             </div>
-
-
+            <div class="col-lg-4 col-md-6">
+                <div class="card">
+                    <div class="card-header">
+                        <strong class="card-title mb-3"><a href="insight.php" style="color: #000;">Essentials in a Look</a></strong>
+                    </div>
+                    <div class="card-body">
+                        <table class="table">
+                            <thead class="thead-dark">
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Word</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <?php
+                            $words = $DAO->execute("SELECT * FROM tf_idf_freq ORDER BY score DESC LIMIT 30");
+                            $index = 0;
+                            foreach($words as $key => $value){
+                                $display = true;
+                                for ($i = 0; $i < count($stop_words); $i++){
+                                    if($stop_words[$i] == $value["word"]){
+                                        $display = false;
+                                    }
+                                }
+                                if(is_numeric($value["word"]))
+                                {
+                                    $display = false;
+                                }
+                                if($display){
+                                    $index += 1;
+                                    if($index <= 10){
+                                        echo '
+                                    <tr>
+                                        <td>'.$index.'</td>
+                                        <td>'.$value["word"].'</td>
+                                    </tr>
+                                    ';
+                                    }
+                                }
+                            }
+                            ?>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+<!--            <div class="col-xl-6">-->
+<!--                <h3>Trend in One Graph</h3>-->
+<!--                -->
+<!--            </div>-->
         </div> <!-- .content -->
     </div>
 
@@ -212,7 +201,14 @@ require "db.php";
                 scaleColors: ['#1de9b6', '#03a9f5'],
                 normalizeFunction: 'polynomial'
             });
+            $(".twitter").click(function () {
+                window.open("https://twitter.com/RBC", '_blank');
+            });
+            $(".facebook").click(function () {
+                window.open("https://www.facebook.com/rbc/", '_blank');
+            });
         })(jQuery);
+
     </script>
 
 </body>

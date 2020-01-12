@@ -1,6 +1,13 @@
 import json
 import pymysql
 
+def escape_column_name(name):
+    # This is meant to mostly do the same thing as the _process_params method
+    # of mysql.connector.MySQLCursor, but instead of the final quoting step,
+    # we escape any previously existing backticks and quote with backticks.
+    converter = mysql.connector.conversion.MySQLConverter()
+    return "`" + converter.escape(converter.to_mysql(name)).replace('`', '``') + "`"
+
 db = pymysql.connect("localhost", "root", "", "lancewgc_cuhacking2020")
 cursor = db.cursor()
 
@@ -63,7 +70,7 @@ while resume:
 #     json.dump(row_data, outfile)
 
 for id, data in row_data.items():
-    sql = 'INSERT INTO tweet(tweet_id, body) VALUES ("{}", "{}")'.format(id, data["text"])
+    sql = 'INSERT INTO tweet(tweet_id, body) VALUES ("{}", "{}")'.format(id, escape_column_name(data["text"]))
     print(sql)
     cursor.execute(sql)
     db.commit()

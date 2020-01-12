@@ -83,19 +83,20 @@ foreach($words as $key => $value){
 
         <div class="content mt-3">
             <div class="animated fadeIn">
-                <div class="row">
+                <div class="row justify-content-md-center">
 
                     <div class="col-md-8">
                         <div class="card">
-                            <div class="card-header">
-                                <strong class="card-title">Data Table</strong>
+                            <div class="card-header" style="text-align: ">
+                                <strong class="card-title">Words on Fire</strong>
                             </div>
                             <div class="card-body">
                                 <table id="bootstrap-data-table-export" class="table table-bordered">
                                     <thead>
                                     <tr>
                                         <th>Word</th>
-                                        <th>Frequency</th>
+                                        <th>Importance Index</th>
+                                        <th>Action</th>
                                     </tr>
                                     </thead>
                                     <tbody>
@@ -114,9 +115,10 @@ foreach($words as $key => $value){
                                         }
                                         if($display){
                                             echo '
-                                            <tr>
+                                            <tr id="obj-'.$value["data_id"].'">
                                                 <td>'.$value["word"].'</td>
                                                 <td>'.$value["score"].'</td>
+                                                <td><a href="remove_word.php?w='.$value["word"].'&t=i" class="btn btn-sm btn-primary btn-remove-word"><i class="fa fa-eye-slash"></i> Remove</a></td>
                                             </tr>
                                             ';
                                         }

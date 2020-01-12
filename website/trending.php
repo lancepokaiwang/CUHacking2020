@@ -1,3 +1,10 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
 <?php
 
 require "db.php";
@@ -8,14 +15,6 @@ foreach($words as $key => $value){
     array_push($stop_words, $value["word"]);
 }
 ?>
-<!doctype html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
-<!--[if gt IE 8]><!-->
-<html class="no-js" lang="en">
-<!--<![endif]-->
-
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -83,19 +82,20 @@ foreach($words as $key => $value){
 
         <div class="content mt-3">
             <div class="animated fadeIn">
-                <div class="row">
+                <div class="row justify-content-md-center">
 
                     <div class="col-md-8">
                         <div class="card">
-                            <div class="card-header">
-                                <strong class="card-title">Data Table</strong>
+                            <div class="card-header" style="text-align: center">
+                                <strong class="card-title">Words Appear Most</strong>
                             </div>
                             <div class="card-body">
                                 <table id="bootstrap-data-table-export" class="table table-bordered">
                                     <thead>
                                         <tr>
                                             <th>Word</th>
-                                            <th>Frequency</th>
+                                            <th>Frequency Index</th>
+                                            <th>Action</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -114,9 +114,10 @@ foreach($words as $key => $value){
                                         }
                                         if($display){
                                             echo '
-                                            <tr>
+                                            <tr id="obj-'.$value["data_id"].'">
                                                 <td>'.$value["word"].'</td>
                                                 <td>'.$value["score"].'</td>
+                                                <td><a href="remove_word.php?w='.$value["word"].'&t=t" class="btn btn-sm btn-primary btn-remove-word"><i class="fa fa-eye-slash"></i> Remove</a></td>
                                             </tr>
                                             ';
                                         }
@@ -156,7 +157,6 @@ foreach($words as $key => $value){
     <script src="vendors/datatables.net-buttons/js/buttons.print.min.js"></script>
     <script src="vendors/datatables.net-buttons/js/buttons.colVis.min.js"></script>
     <script src="assets/js/init-scripts/data-table/datatables-init.js"></script>
-
 
 </body>
 
