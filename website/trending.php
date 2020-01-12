@@ -64,7 +64,7 @@ foreach($words as $key => $value){
             <div class="col-sm-4">
                 <div class="page-header float-left">
                     <div class="page-title">
-                        <h1>Trending</h1>
+                        <h1>Trending - The most frequent words.</h1>
                     </div>
                 </div>
             </div>
