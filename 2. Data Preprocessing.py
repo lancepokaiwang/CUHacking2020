@@ -1,4 +1,20 @@
 import Basic_Functions as bfs
+import pymysql
+
+prohibit_words = []
+db = pymysql.connect("localhost", "root", "", "lancewgc_cuhacking2020")
+cursor = db.cursor()
+cursor.execute("SELECT word FROM filtering_words")
+words = cursor.fetchone()
+for word in words:
+    prohibit_words.append(word)
+
+
+def filtering_words(text):
+    for word in prohibit_words:
+        text = text.replace(word, "")
+    return text
+
 
 tweets = bfs.readJsonFile(name="data", folder="data").items()
 

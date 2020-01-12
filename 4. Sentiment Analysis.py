@@ -30,6 +30,7 @@ from nltk.tokenize import WhitespaceTokenizer
 from nltk.stem import WordNetLemmatizer
 
 def clean_text(text):
+    print(text)
     # lower text
     text = text.lower()
     # tokenize text and remove puncutation
